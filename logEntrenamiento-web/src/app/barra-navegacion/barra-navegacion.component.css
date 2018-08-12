@@ -1,0 +1,13 @@
+* {
+    width: 70%;
+}
+
+nav {   
+    margin: 20px auto 20px auto;
+    border: solid 1px;
+}
+
+nav a {
+    margin: 5px;
+    border: solid 1px;
+}

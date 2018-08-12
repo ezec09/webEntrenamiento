@@ -1,0 +1,13 @@
+<div>
+  <app-selector [queVanAElegir]="'Tipo'" [opcionesDisponibles]="tipoDeEntrenamiento"></app-selector>
+  <app-selector [queVanAElegir]="'Ubicacion'" [opcionesDisponibles]="lugarDeEntrenamiento"></app-selector>
+  <app-selector [queVanAElegir]="'Fecha'" [opcionesDisponibles]="fechaDeEntrenamiento"></app-selector>
+</div>
+<div>
+    <button (click)="crearPasada()">Agregar Pasada</button>
+    <button (click)="borrarTodo()">Borrar Todo</button>
+</div>
+<div>
+  <app-barra-pasada-velocidad *ngFor="let pasada of pasadas" [numeroPasada]="pasada"></app-barra-pasada-velocidad>
+</div>
+
